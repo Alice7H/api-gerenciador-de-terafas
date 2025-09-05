@@ -1,0 +1,45 @@
+{
+  "name": "api-gerenciador-de-tarefas",
+  "version": "1.0.0",
+  "description": "API para um sistema Gerenciador de tarefas",
+  "main": "src/server.ts",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "tsx --watch --env-file .env src/server.ts",
+    "test:dev": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --watchAll --runInBand",
+    "build": "tsup src --out-dir build",
+    "start": "node build/server.js"
+  },
+  "keywords": [
+    "api",
+    "rocketseat",
+    "desafio",
+    "gerenciador-de-tarefas"
+  ],
+  "author": "Alice H. M. Sousa",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.15.0",
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/express": "^5.0.3",
+    "@types/jest": "^30.0.0",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.3.0",
+    "@types/supertest": "^6.0.3",
+    "prisma": "^6.15.0",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.1",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
