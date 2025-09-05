@@ -4,3 +4,4 @@ node_modules
 data
 build
 /src/generated/prisma
+deploy.md
